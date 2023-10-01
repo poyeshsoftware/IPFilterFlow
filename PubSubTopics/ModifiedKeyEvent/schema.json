@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "ModifiedKeyEvent",
+  "fields": [
+    {
+      "name": "key",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "string"
+    },
+    {
+      "name": "isBot",
+      "type": "boolean"
+    },
+    {
+      "name": "isConversion",
+      "type": "boolean"
+    }
+  ]
+}

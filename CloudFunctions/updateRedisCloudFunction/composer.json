@@ -1,0 +1,10 @@
+{
+    "name": "gcp/cloud-functions-framework",
+    "type": "project",
+    "description": "A Google Cloud Function to update redis",
+    "require": {
+        "google/cloud-functions-framework": "^1.3",
+        "psr/http-message": "^1.0",
+        "predis/predis": "^1.1"
+    }
+}

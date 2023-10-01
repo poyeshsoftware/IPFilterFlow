@@ -1,0 +1,49 @@
+{
+  "buildConfig": {
+    "build": "projects/number/locations/europe-west3/builds/buildnumber",
+    "dockerRegistry": "ARTIFACT_REGISTRY",
+    "entryPoint": "convertMessage",
+    "runtime": "php82",
+    "source": {
+      "storageSource": {
+        "bucket": "gcf-v2-sources-number-europe-west3",
+        "object": "convertMessage/function-source.zip"
+      }
+    },
+    "sourceProvenance": {
+      "resolvedStorageSource": {
+        "bucket": "gcf-v2-sources-number-europe-west3",
+        "object": "convertMessage/function-source.zip"
+      }
+    }
+  },
+  "environment": "GEN_2",
+  "eventTrigger": {
+    "eventType": "google.cloud.pubsub.topic.v1.messagePublished",
+    "pubsubTopic": "projects/ipfilteringflow/topics/UnmodifiedKeyEvent",
+    "retryPolicy": "RETRY_POLICY_DO_NOT_RETRY",
+    "serviceAccountEmail": "ipfilteringflow@appspot.gserviceaccount.com",
+    "trigger": "projects/ipfilteringflow/locations/europe-west3/triggers/convertmessage",
+    "triggerRegion": "europe-west3"
+  },
+  "labels": {
+    "deployment-tool": "console-cloud"
+  },
+  "name": "projects/ipfilteringflow/locations/europe-west3/functions/convertMessage",
+  "serviceConfig": {
+    "allTrafficOnLatestRevision": true,
+    "availableCpu": "83m",
+    "availableMemory": "128Mi",
+    "ingressSettings": "ALLOW_ALL",
+    "maxInstanceCount": 2,
+    "maxInstanceRequestConcurrency": 1,
+    "revision": "convertmessage-00024-ber",
+    "service": "projects/ipfilteringflow/locations/europe-west3/services/convertmessage",
+    "serviceAccountEmail": "ipfilteringflow@appspot.gserviceaccount.com",
+    "timeoutSeconds": 60,
+    "vpcConnector": "projects/ipfilteringflow/locations/europe-west3/connectors/cf-redis-connector",
+    "vpcConnectorEgressSettings": "PRIVATE_RANGES_ONLY"
+  },
+  "state": "ACTIVE",
+  "updateTime": "2023-10-01T09:42:15.230044835Z"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "connectedProjects": [
+      "ipfilteringflow"
+    ],
+    "ipCidrRange": "10.x.x.0/28",
+    "machineType": "e2-micro",
+    "maxInstances": 10,
+    "maxThroughput": 1000,
+    "minInstances": 2,
+    "minThroughput": 200,
+    "name": "projects/ipfilteringflow/locations/europe-west3/connectors/cf-redis-connector",
+    "network": "default",
+    "state": "READY"
+  }
+]

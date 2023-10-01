@@ -1,0 +1,42 @@
+
+{
+  "buildConfig": {
+    "build": "projects/number/locations/europe-west3/builds/buildnumber",
+    "dockerRegistry": "ARTIFACT_REGISTRY",
+    "entryPoint": "updateRedisCloudFunction",
+    "runtime": "php74",
+    "source": {
+      "storageSource": {
+        "bucket": "gcf-v2-sources-number-europe-west3",
+        "object": "updateRedisCloudFunction/function-source.zip"
+      }
+    },
+    "sourceProvenance": {
+      "resolvedStorageSource": {
+        "bucket": "gcf-v2-sources-number-europe-west3",
+        "object": "updateRedisCloudFunction/function-source.zip"
+      }
+    }
+  },
+  "environment": "GEN_2",
+  "labels": {
+    "deployment-tool": "console-cloud"
+  },
+  "name": "projects/ipfilteringflow/locations/europe-west3/functions/updateRedisCloudFunction",
+  "serviceConfig": {
+    "allTrafficOnLatestRevision": true,
+    "availableCpu": "83m",
+    "availableMemory": "128Mi",
+    "ingressSettings": "ALLOW_ALL",
+    "maxInstanceCount": 2,
+    "maxInstanceRequestConcurrency": 1,
+    "revision": "updaterediscloudfunction",
+    "service": "projects/ipfilteringflow/locations/europe-west3/services/updaterediscloudfunction",
+    "serviceAccountEmail": "ipfilteringflow@appspot.gserviceaccount.com",
+    "timeoutSeconds": 60,
+    "vpcConnector": "projects/ipfilteringflow/locations/europe-west3/connectors/cf-redis-connector",
+    "vpcConnectorEgressSettings": "PRIVATE_RANGES_ONLY"
+  },
+  "state": "ACTIVE",
+  "updateTime": "2023-09-30T12:17:36.978434954Z"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "UnmodifiedKeyEvent",
+  "fields": [
+    {
+      "name": "key",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "string"
+    },
+    {
+      "name": "ip",
+      "type": "string"
+    },
+    {
+      "name": "url",
+      "type": "string"
+    }
+  ]
+}
